@@ -1,0 +1,30 @@
+﻿База данных создана. Для пользователя u453333586_db установлен пароль LaTuma
+
+CREATE TABLE user
+        (
+        id int(25) AUTO_INCREMENT,
+        user_login varchar(20) NOT NULL UNIQUE,
+        user_password varchar(255) NOT NULL,
+        PRIMARY KEY (id)
+        );
+
+CREATE TABLE documents
+        (
+        id int (255) AUTO_INCREMENT,
+        name varchar (40) NOT NULL,
+        last_name varchar (40) NOT NULL,
+        phone int (25) NOT NULL,
+        car varchar (255) NOT NULL,
+        email varchar (45) NOT NULL,
+        pass1 varchar (255) NOT NULL,
+        pass2 varchar (255) NOT NULL,
+        drive_licence1 varchar (255) NOT NULL,
+        drive_licence2 varchar (255) NOT NULL,
+        tech_pass1 varchar (255) NOT NULL,
+        tech_pass2 varchar (255) NOT NULL,
+        insurance varchar (255) NOT NULL,
+        car_photo varchar (255) NOT NULL,
+        photo_licence varchar (255),
+        PRIMARY KEY (id)
+        );
+
